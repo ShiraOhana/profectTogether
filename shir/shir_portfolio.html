@@ -8,6 +8,14 @@
             href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap"
             rel="stylesheet"
         />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap"
+            rel="stylesheet"
+        />
         <link rel="stylesheet" href="../normalize.css" />
         <link rel="stylesheet" href="shir_portfolio.css" />
         <link rel="icon" type="image/x-icon" href="icon.png" />
@@ -22,21 +30,33 @@
     <body>
         <nav class="navbar">
             <ul>
-                <li><a href="#">About Me</a></li>
-                <li><a href="#">My Projects</a></li>
-                <li><a href="#">Hobbies</a></li>
+                <li><a href="shir_portfolio.html#about-me">About Me</a></li>
+                <li><a href="shir_portfolio.html#projects">My Projects</a></li>
+                <li><a href="shir_portfolio.html#personal">Hobbies</a></li>
+                <li><a href="shir_portfolio.html#contact">Contact</a></li>
             </ul>
         </nav>
 
         <main class="main-content">
-            <h1 class="main-header">Hello My Name Is Shir Toledano</h1>
-            <h3 class="web-description">
-                I am a Biotechnology and Food engineer that really loves
-                programming. <br />
-                My goal is to combine those two world.
-            </h3>
+            <div id="about-me">
+                <h1 class="main-header">Hi, My Name Is Shir Toledano</h1>
+                <h3 class="web-description">
+                    I am a FullStack web developer that really loves
+                    programming. I have a bachelors degree in Biotechnology and
+                    Food engineer and my goal is to combine those two worlds. I
+                    am currently taking part in appleseeds bootcamp and hopes it
+                    will help me to accomplish my goals and start my career as a
+                    developer. I have a big family and a lovely husband, that
+                    helps me alot during the course. I currently live in Givaat
+                    Brenner, at my husband's parents house. <br />
+                    I am a Studio Ghibli and Disney fan and my dream is travel
+                    to Japan one day (I hope Japan will ease up their travel
+                    restrictions). I really love photographing, dancing and
+                    baking (especially japanese food).
+                </h3>
+            </div>
 
-            <div class="grid-container">
+            <div class="grid-container" id="projects">
                 <aside class="project-description">
                     <h3>Bootcamp Projects</h3>
                 </aside>
@@ -71,7 +91,7 @@
                 </div>
             </div>
 
-            <div class="grid-container-personal">
+            <div class="grid-container-personal" id="personal">
                 <div class="personal-img-grid-container">
                     <div class="img-container" id="image-1">
                         <img src="music.jpg" alt="" />
@@ -92,8 +112,11 @@
             </div>
         </main>
 
-        <footer class="footer">
-            <h3>FOLLOW ME</h3>
+        <footer class="footer" id="contact">
+            <h3>
+                <span class="word-1 follow">FOLLOW</span>
+                <span class="word-2 follow">ME</span>
+            </h3>
             <div class="social">
                 <a href="http://facebook.com" target="_blank"
                     ><i class="fab fa-facebook fa-3x"></i

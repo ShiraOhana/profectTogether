@@ -9,11 +9,12 @@ html {
     font-family: "Lato", sans-serif;
     letter-spacing: 0.1rem;
     line-height: 1.6;
+    scroll-behavior: smooth;
 }
 
 .navbar ul {
     display: flex;
-    justify-content: flex-start;
+    justify-content: flex-end;
     align-items: center;
     background: #333;
 }
@@ -21,6 +22,7 @@ html {
 ul li {
     list-style: none;
     padding: 3rem;
+    position: relative;
 }
 
 li a {
@@ -33,7 +35,19 @@ li a:hover {
     color: antiquewhite;
 }
 
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 3;
+    opacity: 0.95;
+}
+
 /* Main */
+
+#about-me {
+    padding-left: 2rem;
+    padding: 0 25%;
+}
 
 h1 {
     text-align: center;
@@ -45,6 +59,7 @@ h1 {
     text-align: center;
     padding: 2rem;
     font-size: 2rem;
+    margin-bottom: 5rem;
 }
 
 .grid-container {
@@ -120,18 +135,78 @@ img {
     font-size: 2rem;
     letter-spacing: 0.5rem;
     padding-bottom: 2rem;
+    font-weight: 900;
+}
+
+.footer h3 span {
+    font-weight: 1200;
 }
 
 .social a i {
     color: rgb(105, 105, 105);
     margin-right: 0.7rem;
+    transition: 200ms ease-in;
+}
+
+.fa-facebook:hover {
+    color: #3b5998;
+}
+.fa-twitter:hover {
+    color: #1da1f2;
+}
+.fa-instagram:hover {
+    color: #833ab4;
+}
+.fa-youtube:hover {
+    color: #ff0000;
 }
 
 img:hover {
     opacity: 0.7;
 }
 
-@media (max-width: 420px) {
+.social a i:hover {
+    transform: translateY(-5px);
+}
+
+footer h3 .follow {
+    animation: color-animation 4s linear infinite;
+}
+
+.word-1 {
+    --color-1: #df8453;
+    --color-2: #3d8dae;
+    --color-3: #e4a9a8;
+}
+
+.word-2 {
+    --color-1: #dbad4a;
+    --color-2: #accfcb;
+    --color-3: #17494d;
+}
+
+@keyframes color-animation {
+    0% {
+        color: var(--color-1);
+    }
+    33% {
+        color: var(--color-2);
+    }
+    66% {
+        color: var(--color-3);
+    }
+    100% {
+        color: var(--color-1);
+    }
+}
+
+@media (max-width: 1344px) {
+    #about-me {
+        padding: 0;
+    }
+}
+
+@media (max-width: 618px) {
     .grid-container-personal {
         width: 100%;
         margin: 0;
@@ -148,6 +223,14 @@ img:hover {
 
     .navbar ul li {
         height: 5rem;
+        border-bottom: 1px rgba(255, 251, 251, 0.3) dashed;
+        width: 100%;
+        text-align: center;
+        padding: 1rem;
+    }
+
+    li a {
+        font-size: 1.5rem;
     }
 
     h1 {
@@ -156,5 +239,14 @@ img:hover {
 
     .web-description {
         font-size: 1.5rem;
+    }
+
+    #projects {
+        grid-template-rows: 1fr;
+        margin-bottom: 5rem;
+    }
+
+    .footer h3 {
+        font-size: 1.4rem;
     }
 }

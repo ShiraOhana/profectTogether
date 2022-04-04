@@ -38,9 +38,15 @@ h1 {
     margin-bottom: 45px;
 }
 
-#shir {
+/* #shir {
     background: url("./shir/profile_img_shir.jpeg") no-repeat center
         center/cover;
+} */
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 @media (max-width: 768px) {
