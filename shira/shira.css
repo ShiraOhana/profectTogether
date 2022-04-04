@@ -55,13 +55,18 @@ h2 {
 
 .first-page {
   width: 100vh;
-  height: 60vw;
+  height: 40vw;
   margin: 0 auto;
   padding: 15px;
+  margin-bottom: 15px;
 }
 .second-page {
   width: 100vh;
-  height: 30vw;
+  height: 40vw;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(autofit, minmax(300px, 1fr));
+  margin-bottom: 15px;
 }
 
 table {
@@ -86,12 +91,14 @@ a:hover {
   width: 0 auto;
   max-width: 50%;
   margin: 0 auto;
+  margin-bottom: 30px;
 }
 
 .cards {
   display: grid;
   grid-template-columns: repeat(2, auto);
   margin: 5px;
+  margin-top: 150px;
 }
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -117,13 +124,103 @@ form {
   padding: 15px;
 }
 .third-page {
-  margin-top: 300px;
   width: 100vh;
-  height: 70vw;
+  height: 40vw;
   text-align: center;
   margin: 0 auto;
   padding: 15px;
+  border: 1px solid black;
+  display: grid;
+  grid-template-columns: repeat(autofit, minmax(300px, 1fr));
 }
-.third-page h2 {
-  margin-top: 300px;
+
+/* Media Queries */
+@media (max-width: 500px) {
+  .first-page img {
+    display: none;
+  }
+  .card img,
+  .information,
+  .second-page h2 {
+    display: none;
+  }
+  .title {
+    display: grid;
+    grid-column: 1/1;
+    grid-row: 1/1;
+  }
+
+  .first-card {
+    grid-column: 1/1;
+    grid-row: 2/2;
+  }
+  .second-card {
+    grid-column: 1/1;
+    grid-row: 3/3;
+  }
+  .third-card {
+    grid-column: 1/1;
+    grid-row: 4/4;
+  }
+  .fourth-card {
+    grid-column: 1/1;
+    grid-row: 5/5;
+  }
+  .contat-info {
+    grid-column: 1/1;
+    grid-row: 6/6;
+  }
+
+  footer,
+  #links,
+  i,
+  p,
+  .fa-brands {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .first-page img {
+    display: none;
+  }
+  .card img,
+  .information,
+  .second-page h2 {
+    display: none;
+  }
+  .title {
+    display: grid;
+    grid-column: 1/1;
+    grid-row: 1/1;
+  }
+
+  .first-card {
+    grid-column: 1/1;
+    grid-row: 2/2;
+  }
+  .second-card {
+    grid-column: 1/1;
+    grid-row: 3/3;
+  }
+  .third-card {
+    grid-column: 1/1;
+    grid-row: 4/4;
+  }
+  .fourth-card {
+    grid-column: 1/1;
+    grid-row: 5/5;
+  }
+  .contat-info,
+  .third-page {
+    grid-column: 1/1;
+    grid-row: 6/6;
+    border: none;
+  }
+  footer,
+  #links,
+  i,
+  p,
+  .fa-brands {
+    display: none;
+  }
 }
