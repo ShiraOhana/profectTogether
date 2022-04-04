@@ -1,1 +1,1 @@
-# profectTogether
+# projectTogether
