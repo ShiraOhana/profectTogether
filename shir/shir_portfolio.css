@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: "Lato", sans-serif;
+    letter-spacing: 0.1rem;
+    line-height: 1.6;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background: #333;
+}
+
+ul li {
+    list-style: none;
+    padding: 3rem;
+}
+
+li a {
+    text-decoration: none;
+    font-size: 2rem;
+    color: #fff;
+}
+
+li a:hover {
+    color: antiquewhite;
+}
+
+/* Main */
+
+h1 {
+    text-align: center;
+    font-size: 4rem;
+    padding-top: 2rem;
+}
+
+.web-description {
+    text-align: center;
+    padding: 2rem;
+    font-size: 2rem;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    margin-bottom: 5rem;
+}
+
+.project-description {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #777;
+}
+
+.project-description h3,
+.personal-description h3 {
+    font-size: 3rem;
+    color: #fff;
+}
+
+/* Images gallery */
+.img-grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.6rem;
+    margin: 0 0.6rem;
+}
+
+.img-container {
+    border: rgb(146, 143, 143) 1px dotted;
+}
+
+img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    transition: 0.3s ease-in-out;
+}
+
+/* Main-Personal */
+
+.grid-container-personal {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    width: 50%;
+    margin: 0 25%;
+}
+
+.personal-description {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #333;
+}
+
+.personal-img-grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.6rem;
+    margin: 0 0.6rem;
+}
+
+/* Footer */
+.footer {
+    margin: 2rem;
+    text-align: center;
+}
+
+.footer h3 {
+    font-size: 2rem;
+    letter-spacing: 0.5rem;
+    padding-bottom: 2rem;
+}
+
+.social a i {
+    color: rgb(105, 105, 105);
+    margin-right: 0.7rem;
+}
+
+img:hover {
+    opacity: 0.7;
+}
+
+@media (max-width: 420px) {
+    .grid-container-personal {
+        width: 100%;
+        margin: 0;
+    }
+
+    .project-description h3,
+    .personal-description h3 {
+        font-size: 1.3rem;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+    }
+
+    .navbar ul li {
+        height: 5rem;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    .web-description {
+        font-size: 1.5rem;
+    }
+}
