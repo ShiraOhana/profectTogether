@@ -15,8 +15,8 @@
       href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/normalize.css" />
-    <link rel="stylesheet" href="/shira.css" />
+    <link rel="stylesheet" href="./normalize.css" />
+    <link rel="stylesheet" href="./shira.css" />
   </head>
   <body>
     <nav>
@@ -29,6 +29,7 @@
       </ul>
     </nav>
     <div class="first-page">
+      <div class="title"></div>
       <h2>Hello World! My name is</h2>
       <h1>Shira Ohana</h1>
       <h2>I'm a web developer</h2>
@@ -39,53 +40,58 @@
         alt="My profile picture"
         width="300px"
       />
+      <br>
+      <br />
       <p class="image-explanation">(That's me! 👽 )</p>
+      <br>
       <div class="information">
-        I love everything that has to do with programming 👩‍💻
+        <h3>A bit about me</h3>
+        I love everything about programming 👩‍💻 <br>
+        I live in Tel-Aviv with my 10y/o Golden-Retriver and my significant other. <br> I've learned Anthropology and wroth a Thesis about the Geek comunity in Israel. <br>
+
       </div>
       <br />
+    </div>
       <div class="second-page">
-        <h2>My Hobbies</h2>
-        My hobbies are painting, pottery, traveling and reading a good book with
-        a cup of coffee ☕
+        <h2></h2>
+        
         <!-- Cards -->
         <div class="cards">
           <div class="card first-card">
             <img src="./Lucky.jpg" alt="Avatar" style="width: 40%" />
             <div class="container">
               <h4><b>That's my dog</b></h4>
-              <p>(He really loves to sleep)</p>
+              <p>He really loves to sleep</p>
+            </div>
+          </div>    <div class="card second-card">
+            <img src="/link-awakening.jpg" alt="Avatar" style="width: 50%" />
+            <div class="container">
+              <h4><b>I love my Nintendo Switch</b></h4>
+              <p>Especially Zelda & Animal Crossing</p>
             </div>
           </div>
-          <div class="card second-card">
+          <div class="card third-card">
             <img src="./knitting.jpg" alt="knitting" style="width: 40%" />
             <div class="container">
               <h4><b>That's my crochet project</b></h4>
-              <p>(I made a cute scarf)</p>
+              <p>I made a cute scarf</p>
             </div>
           </div>
-          <div class="card first-card">
-            <img src="/painting.png" alt="Avatar" style="width: 40%" />
+      
+          <div class="card fourth-card">
+            <img src="./Thw walking dead.png" alt="Avatar" style="width: 50%" />
             <div class="container">
-              <h4><b>That's my drawing</b></h4>
-              <p>(I love landscapes in watercolors)</p>
-            </div>
-          </div>
-          <div class="card first-card">
-            <img src="./Lucky.jpg" alt="Avatar" style="width: 40%" />
-            <div class="container">
-              <h4><b>That's my dog</b></h4>
-              <p>(He really loves to sleep)</p>
+              <h4><b>I love zombies </b></h4>
+              <p>Especially The walking dead</p>
             </div>
           </div>
         </div>
       </div>
-    </div>
-
+    
     <!-- Third page -->
-
     <div class="third-page">
-      <h1>Contact me</h1>
+      <div class="contat-info">
+      <h4>Contact me</h4>
       <form action="#">
         <div>
           <label for="Name">Name:</label>
@@ -107,7 +113,9 @@
         <input type="submit" value="Send" />
       </form>
       <footer>
+      </div>
         <h4 id="links">Follow me around:</h4>
+        <br><br>
         <table>
           <thead>
             <tr>
