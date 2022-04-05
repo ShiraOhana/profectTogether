@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    width: 100vw;
+    padding-top: 2rem;
+    background-color: wheat;
+    background: url(../showcase.jpg) no-repeat center center/cover;
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+a {
+    width: 300px;
+    height: 400px;
+    border: 1px solid black;
+    margin: 5px;
+    border-radius: 8px;
+    background-color: #fff;
+    opacity: 0.9;
+    flex-shrink: 1;
+}
+h1 {
+    text-align: center;
+    border: 1px solid #A1714F;
+    padding: 5px 5px;
+    max-width: 50%;
+    margin: 0 auto;
+    margin-bottom: 45px;
+}
+#shir {
+    background: url("./shir/profile_img_shir.jpeg") no-repeat center
+        center/cover;
+}
+/* .sharona {
+    background: url("./profile.jpg") no-repeat center
+    center/cover;
+} */
+@media (max-width: 768px) {
+    body {
+        background: url(/‏‏showcase\ narrow.jpg) no-repeat center center/cover;
+    }
+    .card {
+        width: 300px;
+        height: 300px;
+    }
+    .container {
+        display: flex;
+        /* justify-content: space-between; */
+    }
+}
+@media (max-width: 1240px) {
+    body {
+        background: url(/‏‏showcase\ narrow.jpg) no-repeat center center/cover;
+    }
+}
+@media (max-width: 633px) {
+    body {
+        background: url(/‏‏showcase\ narrow.jpg) no-repeat center center/cover;
+    }
+    a {
+        width: 200px;
+        height: 300px;
+    }
+    .container {
+        display: flex;
+        /* justify-content: space-between; */
+    }
+    h1 {
+        font-size: 25px;
+    }
+}
+@media (max-width: 420px) {
+    a {
+        width: 150px;
+        height: 200px;
+    }
+}
